@@ -1,6 +1,14 @@
-# Welcome to your Expo app 👋
+# Fit App 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A comprehensive fitness tracking application built with Expo and React Native.
+
+## Features
+
+- **Training Management**: Create, view, edit, and delete training sessions
+- **Exercise Tracking**: Add exercises with sets, reps, and weight tracking
+- **Tagging System**: Organize workouts with color-coded tags (Brazo, Pierna, Pecho, etc.)
+- **Date/Time Tracking**: Record when each training session was completed
+- **Local Storage**: All data is persisted locally on the device
 
 ## Get started
 
@@ -23,17 +31,26 @@ In the output, you'll find options to open the app in a
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
 - [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Training Feature Overview
 
-## Get a fresh project
+The Training feature allows users to:
 
-When you're ready, run:
+1. **View Training Sessions**: Browse all recorded training sessions with date, time, and tag information
+2. **Add New Sessions**: Create new training sessions with:
+   - Date selection
+   - Time selection
+   - Tag categorization (Brazo, Pierna, Pecho, Espalda, Hombro, Cardio, Abdomen)
+   - Exercise tracking with sets, reps, and weight
+3. **Edit Existing Sessions**: Modify any aspect of a training session
+4. **Delete Sessions**: Remove unwanted training records
+5. **View Session Details**: See complete details of each training session
 
-```bash
-npm run reset-project
-```
+## Project Structure
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- **app/**: Main application screens and routing
+- **components/training/**: Training-specific UI components
+- **types/**: TypeScript type definitions
+- **utils/**: Utility functions for storage and ID generation
 
 ## Learn more
 
