@@ -7,7 +7,7 @@ import { ExerciseCard } from '../../components/training/ExerciseCard';
 import { TrainingSession, tagColors } from '../../types/training';
 import { storage } from '../../utils/storage';
 
-export default function ViewTrainingScreen() {
+export default function TrainingDetailScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { sessionId } = useLocalSearchParams();
@@ -60,7 +60,7 @@ export default function ViewTrainingScreen() {
   }
 
   const handleEdit = () => {
-    router.push(`/training/add?sessionId=${session.id}`);
+    router.push(`/training/form?sessionId=${session.id}`);
   };
 
   const tagColor = tagColors[session.tag] || tagColors.default;

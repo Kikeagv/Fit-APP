@@ -10,7 +10,7 @@ import { Exercise, TrainingSession } from '../../types/training';
 import { generateUniqueId } from '../../utils/idGenerator';
 import { storage } from '../../utils/storage';
 
-export default function AddTrainingScreen() {
+export default function TrainingFormScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const [date, setDate] = useState('');

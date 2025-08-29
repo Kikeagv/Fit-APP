@@ -7,7 +7,7 @@ import { TrainingSessionCard } from '../../components/training/TrainingSessionCa
 import { TrainingSession } from '../../types/training';
 import { storage } from '../../utils/storage';
 
-export default function TrainingScreen() {
+export default function TrainingListScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const [sessions, setSessions] = useState<TrainingSession[]>([]);
@@ -46,11 +46,11 @@ export default function TrainingScreen() {
   };
 
   const handleAddSession = () => {
-    router.push('/training/add');
+    router.push('/training/form');
   };
 
   const handleSessionPress = (session: TrainingSession) => {
-    router.push(`/training/view?sessionId=${session.id}`);
+    router.push(`/training/detail?sessionId=${session.id}`);
   };
 
   const dynamicStyles = StyleSheet.create({
